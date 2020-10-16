@@ -1,6 +1,6 @@
 package com.cg.findmax;
 
-public class UC4_GenericsMethod {
+public class Refactor1_GenericsMethod {
 	public static < E extends Comparable<E>> void largestElement( E[] a ) {
 		   E max=a[0];
 	       for(int e=1;e<a.length;e++) {
@@ -11,12 +11,11 @@ public class UC4_GenericsMethod {
 	      }
 
 	   public static void main(String args[]) {
-	       Integer[] intArray = { 1, 2, 3, 4, 5 };
-	       Float[] fltArray = { 100.0f,25.0f,30.0f,45.0f};
-           String[] stringArray={"Dog","Horse","Elephant","Bat","Monkey"};
+	       Integer[] intArray = {2,1,5};
+	       Float[] fltArray = {100.0f,25.0f,30.0f};
+           String[] stringArray={"Dog","Horse","Elephant"};
 	       largestElement(intArray);  
 	       largestElement(fltArray);
 	       largestElement(stringArray);
-	       
-	   }
+	       }
 }
